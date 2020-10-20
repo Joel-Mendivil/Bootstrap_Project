@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Overwatch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body class="bg-dark"> <!--The background color of the body is dark.-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger text-dark"> <!--Creates a Navbar that has dark text, red as the background color, a search bar, and a dropdown menu with multiple options when clicked.-->
+        <a class="navbar-brand" href="#">Game List</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="game_index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="liveCount.html">Player Count</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="recommend.html">Content Creators</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Games
+              </a>
+              <div class="dropdown-menu navbar-light bg-dark text-danger" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="game_description.html">Fortnite</a>
+                <a class="dropdown-item" href="#">Among Us</a>
+                <a class="dropdown-item" href="#">Fall Guys</a>
+                <a class="dropdown-item" href="#">Apex Legends</a>
+                <a class="dropdown-item" href="#">COD: Modern Warfare</a>
+                <a class="dropdown-item" href="#">GTA V</a>
+                <a class="dropdown-item" href="#">Rocket League</a>
+                <a class="dropdown-item" href="overwatch_game.html">Overwatch</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid"> <!--Creates a container where the heading and paragraph are located on top and beneath each other with the first heading being larger than the paragraph element.-->
+        <div class="container">
+          <h1 class="display-4">Overwatch</h1>
+          <p class="lead">Developed by: Blizzard Entertainment</p>
+        </div>
+    </div>
+    <div class="card float-left ml-5" style="width: 18rem;"> <!--Creates a card that includes an image on top, a heading, a small paragraph that acts as a description, and a button that takes the viewer to the official website of the game shown.-->
+      <img src="overwatch_heros.jpg" class="card-img-top" alt="Fortnite" width="286px" height="160.88px">
+      <div class="card-body">
+        <h5 class="card-title">Heros</h5>
+        <p class="card-text">From an cowboy to a robot sensei, there are many heros to choose from. Each are equipped with their own abilities that make them stand out from one another.</p>
+        <a href="#" class="btn btn-danger">Learn More</a>
+      </div>
+    </div>
+  
+    <div class="card float-left ml-5" style="width: 18rem;">
+      <img src="overwatch_maps.png" class="card-img-top" alt="Among Us" width="286px" height="160.88px">
+      <div class="card-body">
+        <h5 class="card-title">Maps</h5>
+        <p class="card-text">In your fight to claim victory, you and your team will fight in many different environments from a temple to a desert. Some are more dangerous than others.</p>
+        <a href="#" class="btn btn-danger">Learn More</a>
+      </div>
+    </div>
+  
+    <div class="card float-right mr-5" style="width: 18rem;">
+      <img src="overwatch_events.jpg" class="card-img-top" alt="Fall Guys" width="286px" height="160.88px">
+      <div class="card-body">
+        <h5 class="card-title">Limited-Time Events</h5>
+        <p class="card-text">During holidays or an unexpected time, events will occur that allows you to complete challenges to unlock skins for your charactersn and other limited-time rewards.</p>
+        <a href="#" class="btn btn-danger">Learn More</a>
+      </div>
+    </div>
+  
+    <div class="card float-right mr-5" style="width: 18rem;">
+      <img src="overwatch_league.png" class="card-img-top" alt="Rocket League" width="286px" height="160.88px">
+      <div class="card-body">
+        <h5 class="card-title">Competitive</h5>
+        <p class="card-text">The Overwatch League brings together all players to see who is the best Overwatch team in the world. Be on the lookout for more future events.</p>
+        <a href="" class="btn btn-danger">Learn More</a>
+      </div>
+    </div>
+
+    <div id="search" class = "text-center mt-2 text-white ml-5 mr-5">
+        <input type="text" placeholder="Overwatch Player" id="oName">
+        <button id="get-btn">Search Player Data</button>
+    </div>
+
+    <script src="overwatch.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
