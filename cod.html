@@ -49,27 +49,19 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">Call of Duty Stats Tracker</h1>
-          <p class="lead">This is where you can check anyone's warzone stats .</p>
+          <p class="lead">This is where you can check anyone's Warzone Stats.</p>
         </div>
       </div>
 
-      <div class="input-group flex-nowrap">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="addon-wrapping">@</span>
-        </div>
-        <input type="text" class="form-control" placeholder="GamerTag" aria-label="GamerTag" aria-describedby="addon-wrapping">
-      </div>
+      <div id="search" class = "text-center mt-2 text-white ml-5 mr-5">
+        <input type="text" placeholder="Player Name" id="oName">
+        <input type="text" placeholder="Platform" id="oPlatform">
+        <button id="get-btn">Search Player Data</button>
+    </div>
 
-      <div class="input-group">
-        <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-          <option selected>Choose...</option>
-          <option value="1">Battle.net</option>
-          <option value="2">Xbox Live</option>
-          <option value="3">Playstation</option>
-        </select>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button">Search</button>
-        </div>
-      </div>
+      <center><h2 class="text-white bg-danger mt-3 ml-5 mr-5">Wins: <input type="text" readonly id="info_wins"><br></h2></center>
+      <center><h2 class="text-white bg-danger mt-3 ml-5 mr-5">Kill Death Ratio: <input type="text" readonly id="info_kd"><br></h2></center>
+      <center><h2 class="text-white bg-danger mt-3 ml-5 mr-5">Time Played: <input type="text" readonly id="info_time"><br></h2></center>
+      
     </body>
     </html>
