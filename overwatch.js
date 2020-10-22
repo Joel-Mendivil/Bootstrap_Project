@@ -10,6 +10,7 @@ const getData = () =>{
 	sendHttpRequest('GET', tops);
 };
 
+
 const sendHttpRequest = (method, url) => {
     const promise = new Promise((resolve, reject) =>{
     console.log(url);
@@ -27,16 +28,11 @@ const sendHttpRequest = (method, url) => {
 			document.getElementById('info_platform').value = data[0].player.platform;
 			document.getElementById('info_id').value = data[0].player.id;
 			document.getElementById('info_psr').value = data[0].sr.previous;
-			document.getElementById('info_csr').value = data[0].sr.current
+			document.getElementById('info_csr').value = data[0].sr.current;
         }
         //or xhr.addeventlistener('load', function)
         xhr.send();
     })
-}
-
-const input = document.getElementById('numberValue');
-if (isNaN(input)){
-	alert('Please type in a number value');
 }
 
 /// add event listener to get button /
