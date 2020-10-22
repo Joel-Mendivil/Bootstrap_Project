@@ -23,15 +23,20 @@ const sendHttpRequest = (method, url) => {
         	console.log(data)//JSON Data
 
 //////// Assign diferent parts to pokedex using dom selection/////////
-			document.getElementById('info_tag').value = data[1].player.tag;
-			document.getElementById('info_platform').value = data[1].player.platform;
-			document.getElementById('info_main').value = data[1].main.current;
-			document.getElementById('info_role').value = data[1].main.role;
-			document.getElementById('info_win').value = data[1].winrate.current;
+			document.getElementById('info_tag').value = data[0].player.tag;
+			document.getElementById('info_platform').value = data[0].player.platform;
+			document.getElementById('info_id').value = data[0].player.id;
+			document.getElementById('info_psr').value = data[0].sr.previous;
+			document.getElementById('info_csr').value = data[0].sr.current
         }
         //or xhr.addeventlistener('load', function)
         xhr.send();
     })
+}
+
+const input = document.getElementById('numberValue');
+if (isNaN(input)){
+	alert('Please type in a number value');
 }
 
 /// add event listener to get button /
