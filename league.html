@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>League of Legends</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body class="bg-dark"> <!--The background color of the body is dark.-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger text-dark"> <!--Creates a Navbar that has dark text, red as the background color, a search bar, and a dropdown menu with multiple options when clicked.-->
+        <a class="navbar-brand" href="#">Game List</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="game_index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="liveCount.html">Player Count</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="recommend.html">Content Creators</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Games
+              </a>
+              <div class="dropdown-menu navbar-light bg-dark text-danger" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="game_description.html">Fortnite</a>
+                <a class="dropdown-item" href="#">Among Us</a>
+                <a class="dropdown-item" href="#">Fall Guys</a>
+                <a class="dropdown-item" href="#">Apex Legends</a>
+                <a class="dropdown-item" href="cod.html">COD: Modern Warfare</a>
+                <a class="dropdown-item" href="league.html">League of Legends</a>
+                <a class="dropdown-item" href="#">Rocket League</a>
+                <a class="dropdown-item" href="overwatch_game.html">Overwatch</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid"> <!--Creates a container where the heading and paragraph are located on top and beneath each other with the first heading being larger than the paragraph element.-->
+        <div class="container">
+          <h1 class="display-4">League of Legends</h1>
+          <p class="lead">Developed by: Riot Games</p>
+        </div>
+    </div>
+    <div class="card float-left ml-5" style="width: 18rem;"> <!--Creates a card that includes an image on top, a heading, a small paragraph that acts as a description, and a button that takes the viewer to the official website of the game shown.-->
+      <img src="l_o_l.jpg" class="card-img-top" alt="Fortnite Battle Royale" width="286px" height="160.88px">
+      <div class="card-body">
+        <h5 class="card-title">Characters</h5>
+        <p class="card-text">From ninjas to monsters, there are many champions to choose from. All have their own unique abilities.</p>
+        <a href="" class="btn btn-danger">Learn More</a>
+      </div>
+    </div>
+  
+    <div class="card float-left ml-5" style="width: 18rem;">
+      <img src="stats.jpeg" class="card-img-top" alt="Fortnite Save the World" width="286px" height="160.88px">
+      <div class="card-body">
+        <h5 class="card-title">Free to play</h5>
+        <p class="card-text">If you ever considered playing League of Legends, it's free to play with the ability to purchase cosmetics if you choose to.</p>
+        <a href="#" class="btn btn-danger">Learn More</a>
+      </div>
+    </div>
+  
+    <div class="card float-right mr-5" style="width: 18rem;">
+      <img src="lollogo.jpg" class="card-img-top" alt="Fortnite Creative" width="286px" height="160.88px">
+      <div class="card-body">
+        <h5 class="card-title">Constant updates</h5>
+        <p class="card-text">With the game existing for over 10 years, there is always something to be hyped for from a new champion or to a map.</p>
+        <a href="#" class="btn btn-danger">Learn More</a>
+      </div>
+    </div>
+  
+    <div class="card float-right mr-5" style="width: 18rem;">
+      <img src="competivitive_lol.jpg" class="card-img-top" alt="Fortnite Collaborations" width="286px" height="160.88px">
+      <div class="card-body">
+        <h5 class="card-title">Competitive</h5>
+        <p class="card-text">Want to prove your skill at the competivitve scene for League of Legends? Click on the button below.</p>
+        <a href="#" class="btn btn-danger">Learn More</a>
+      </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="search" class = "text-center text-white mt-5 ml-5 mr-5">
+        <input type="text" placeholder="Champion Id" id="championId">
+        <button id="get-btn">Get info</button>
+    </div>
+
+    <center><h2 class="text-white bg-danger ml-5 mr-5">Name: <input type="text" readonly id="playerName"><br></h2></center>
+    <center><h2 class="text-white bg-danger ml-5 mr-5">Title: <input type="text" readonly id="titleName"><br></h2></center>
+    <center><h2 class="text-white bg-danger ml-5 mr-5">Role: <input type="text" readonly id="roleName"><br></h2></center>
+    <center><h2 class="text-white bg-danger ml-5 mr-5">Quote: <input type="text" readonly id="quote"><br></h2></center>
+    <center><h2 class="text-white bg-danger ml-5 mr-5">Author: <input type="text" readonly id="authorQuote"><br></h2></center>
+
+    <script src="league.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html> 
